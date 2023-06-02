@@ -1,6 +1,7 @@
 import { InputManager } from "../app";
 
 export default class Main {
+  #ctx;
   /**
    * Initialize app
    * @param {CanvasRenderingContext2D} ctx 2d canvas context
