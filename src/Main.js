@@ -1,4 +1,4 @@
-import { InputManager } from "../app";
+import { InputManager } from "../app.js";
 
 export default class Main {
   #ctx;
