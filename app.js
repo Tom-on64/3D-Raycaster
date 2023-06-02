@@ -36,7 +36,8 @@ const update = (time) => {
 
   main.update(dt);
 
-  if (buffer >= 1000 / main.framerate) {
+  
+  if (buffer >= 1000 / main.frameRate) {
     buffer = 0;
     main.fixedUpdate();
   } else buffer += dt;
