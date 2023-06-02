@@ -1,6 +1,7 @@
 import { InputManager } from "../app";
 
 export default class Main {
+  #ctx;
   /**
    * Initialize app
    * @param {CanvasRenderingContext2D} ctx 2d canvas context
@@ -15,12 +16,33 @@ export default class Main {
     this.isDebug = isDebug;
   }
 
-  start() {}
+  /**
+   * Runs once at start
+   */
+  start() {
+    // Write your setup code here and not in the constructor
+  }
 
-  update(dt) {}
+  /**
+   * Gets called every frame
+   * @param {number} dt Time since last frame
+   */
+  update(dt) {
+    // Write your logic here
+  }
 
-  fixedUpdate() {}
+  /**
+   * Gets called every frame update (If FPS is 30, than 30x a second)
+   */
+  fixedUpdate() {
+    // Write your rendering code here
+  }
 
+  /**
+   * Resizes the window
+   * @param {number} w Window width
+   * @param {number} h Window height
+   */
   resize(w, h) {
     this.width = w;
     this.height = h;
