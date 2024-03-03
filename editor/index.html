@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/editor/app.js" defer></script>
+        <title>Level Editor</title>
+        <style>
+            *, ::after, ::before { padding: 0px; margin: 0px; box-sizing: border-box; }
+            body { background-color: #111; display: flex; justify-content: center; align-items: center; height: 100vh; width: 100vw; flex-direction: column; }
+            canvas { image-rendering: pixelated; }
+            #config { display: flex; justify-content: center; align-items: center; gap: 8px; color: white; }
+        </style>
+    </head>
+    <body>
+        <div id="config">
+            <div><label>Level Name: </label><input value="Level" type="text" id="lvlName"></div>
+            <div><label>Width: </label><input value="100" type="number" id="lvlWidth"></div>
+            <div><label>Height: </label><input value="100" type="number" id="lvlHeight"></div>
+            <button id="exportBtn">Export</button>
+        </div>
+        <canvas id="screen"></canvas>
+        <textarea id="exportData" style="display: none;"></textarea>
+    </body>
+</html>
