@@ -57,7 +57,7 @@ export default class Player {
             const r = this.rays[index];
             index++;
 
-            distanceData.push(r.castLevel(walls).dist * Math.sin(angleToRad(a)));
+            distanceData.push(r.castLevel(walls).dist * Math.cos(angleToRad(a)));
         }
 
         return distanceData;
